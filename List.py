@@ -34,6 +34,8 @@ cultivation_stages = ["Early", "Mid", "Late", "Peak"]
 #idk man
 #manual_level = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 #manual_upgrade_cost = [25, 50, 75, 100, 150, 300, 500, 750, 1000, 1500, 3000, 5000, 7500, 10000, 12500]
+pills = ["Low Quality Qi Pill", "Low Quality Qi Pill", "Low Quality Qi Pill", "Low Quality Qi Pill", "Low Quality Qi Pill", "Low Quality Qi Pill", "Low Quality Qi Pill", "Low Quality Qi Pill", "Low Quality Qi Pill", "Low Quality Qi Pill", "Low Quality Qi Pill", "Low Quality Qi Pill", "Low Quality Qi Pill", "Low Quality Qi Pill", "Low Quality Qi Pill", "Low Quality Qi Pill", "Low Quality Qi Pill", "Low Quality Qi Pill", "Low Quality Qi Pill", "Low Quality Qi Pill", "Medium Quality Qi Pill", "Medium Quality Qi Pill", "Medium Quality Qi Pill", "Medium Quality Qi Pill", "Medium Quality Qi Pill", "Medium Quality Qi Pill", "Medium Quality Qi Pill", "Medium Quality Qi Pill", "Medium Quality Qi Pill", "Medium Quality Qi Pill", "High Quality Qi Pill", "High Quality Qi Pill", "High Quality Qi Pill", "High Quality Qi Pill", "High Quality Qi Pill", "Perfect Qi Pill", "Death Pill" ]
+
 
 armor = ["Leather Armor", "Steel Armor", "Martial Artists Robe", "Demonic Armor", ]
 

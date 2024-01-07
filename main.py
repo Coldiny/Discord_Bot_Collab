@@ -3,7 +3,7 @@ import discord, os, asyncio, time, random
 from itertools import cycle
 from discord.ext import commands, tasks
 from keep_running import keep_running
-from List import player, cultivation_level, cultivation_stages
+from List import player, cultivation_level, cultivation_stages, armor, weapons, pills
 
 
 
@@ -301,12 +301,18 @@ async def breakthrough(ctx):
 #==================Shop Command====================#
 @bot.command()
 async def shop(ctx):
+    thepills = random.choice(pills)
+    thepills1 = random.choice(pills)
+    thepills2 = random.choice(pills)
+    thepills3 = random.choice(pills)
+    thepills4 = random.choice(pills)
+    thepills5 = random.choice(pills)
     page1 = discord.Embed(title='Shop',
-                         description="Welcome to the Shop. What do you want to buy?",
-                         colour=discord.Colour.blue())
-     
+                           description="Welcome to the Shop. What do you want to buy?",
+                           colour=discord.Colour.blue())
+       
     page1.set_thumbnail(
-      url='https://cdn.discordapp.com/attachments/1185455650650738810/1192837541527818331/9k.png?ex=65aa8787&is=65981287&hm=4dcce452ad4c05c5e1ac90563f7d2f7014e6eb76c7fb05f4c807b9288efe1069&'
+        url='https://cdn.discordapp.com/attachments/1185455650650738810/1192837541527818331/9k.png?ex=65aa8787&is=65981287&hm=4dcce452ad4c05c5e1ac90563f7d2f7014e6eb76c7fb05f4c807b9288efe1069&'
     )
     page1.set_footer(
       text="Made By Coldiny#5056",
@@ -318,12 +324,12 @@ async def shop(ctx):
       icon_url=
       'https://cdn.discordapp.com/avatars/1192821473186939014/75ef6e4eb838636e5677b566fb90560b.png?size=4096'
     )
-    page1.add_field(name="", value="", inline=False)
-    page1.add_field(name="", value="", inline=False)
-    page1.add_field(name="", value="", inline=False)
-    page1.add_field(name="", value="", inline=False)
-    page1.add_field(name="", value="", inline=False)
-    page1.add_field(name="", value="", inline=False)
+    page1.add_field(name=f"***{thepills}***", value="", inline=False)
+    page1.add_field(name=f"***{thepills1}***", value="", inline=False)
+    page1.add_field(name=f"***{thepills2}***", value="", inline=False)
+    page1.add_field(name=f"***{thepills3}***", value="", inline=False)
+    page1.add_field(name=f"***{thepills4}***", value="", inline=False)
+    page1.add_field(name=f"***{thepills5}***", value="", inline=False)
   
     pages = [page1]
   
