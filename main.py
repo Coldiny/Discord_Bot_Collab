@@ -428,17 +428,25 @@ async def upgrade(ctx):
   global manual_level
   #we need currency
 #==================Bag Command====================#
+@bot.command()
+async def bag(ctx):
+  await ctx.send("Your bag is empty.")
 
 #==================Use Command====================#
 
 #==================Equip Command====================#
 
 #==================Sect Command====================#
+@bot.command()
+async def sect(ctx):
+  await ctx.send("There are no sects available.")
 
 #==================Join Command====================#
 
 #==================Leave Command====================#
 
+
+#==================Bot Being Mentioned====================#
 @bot.event
 async def on_message(message):
     await bot.process_commands(message)
@@ -448,6 +456,7 @@ async def on_message(message):
     if bot.user.mentioned_in(message):
         await message.channel.send(f"Hello {message.author.mention}! My prefix is || ah || don't forget it now.")
 
+#==================Bot Command Error====================#
 @bot.event
 async def on_command_error(ctx, error):
   if isinstance(error, commands.CommandNotFound):
